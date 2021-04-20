@@ -1,1 +1,3 @@
-# aux04
+# Auxiliar 04
+
+Los archivos importantes a revisar son: [urls.py](nombre_proyecto/nombre_app/urls.py), [views.py](nombre_proyecto/nombre_app/views.py) y los templates [index.html](nombre_proyecto/nombre_app/templates/nombre_app/index.html), [formulario.html](nombre_proyecto/nombre_app/templates/nombre_app/formulario.html) y [resultados.html](nombre_proyecto/nombre_app/templates/nombre_app/resultados.html).
