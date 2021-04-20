@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="{% url 'resultados' %}" method="POST">
+        {% csrf_token %}
+        <label for="fname">Primer nombre: </label>
+        <input type="text" id="fname" name="fname"> <br>
+
+        <label for="lname">Segundo nombre: </label>
+        <input type="text" id="lname" name="lname"> <br><br><br>
+
+        <input type="checkbox" id="need1" name="need1" value="sueño">
+        <label for="need1"> Tengo sueño</label><br>
+        <input type="checkbox" id="need2" name="need2" value="hambre">
+        <label for="need2"> Tengo hambre</label><br>
+        <input type="checkbox" id="need3" name="need3" value="tristeza">
+        <label for="need3"> Tengo pena</label><br><br><br>
+
+        ¿Quieres un 7?<br>
+        <input type="radio" id="si1" name="nota" value="sí">
+        <label for="si1">Sí</label><br>
+        <input type="radio" id="si2" name="nota" value="síiiiiiiii">
+        <label for="si2"><span style="color:green;">Sí, pero en verde</span></label><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
