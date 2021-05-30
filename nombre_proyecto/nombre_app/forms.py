@@ -8,6 +8,6 @@ class Formulario(forms.Form):
     need2 = forms.BooleanField(label="Tengo hambre", required=False)
     need3 = forms.BooleanField(label="Tengo pena", required=False)
 
-    CHOICES = (('si1', "Sí"),
-               ('si2', "Sí, pero con choreza"))
-    nota = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect)
+    CHOICES = (('sí', "Sí"),
+               ('síiiiiiiii', "Sí, pero con choreza"))
+    nota = forms.ChoiceField(label="¿Quieres un 7?", choices=CHOICES, widget=forms.RadioSelect)
