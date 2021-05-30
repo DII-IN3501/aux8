@@ -1,11 +1,13 @@
 from django.shortcuts import render
+from nombre_app.forms import Formulario
 
 # Create your views here.
 def index(request):
     return render(request, 'nombre_app/index.html')
 
 def formulario(request):
-    return render(request, 'nombre_app/formulario.html')
+    form = Formulario()
+    return render(request, 'nombre_app/formulario.html', {'form': form})
 
 def resultados(request):
     fname = request.POST['fname']
@@ -13,11 +15,11 @@ def resultados(request):
 
     needs = []
     if 'need1' in request.POST: # OJO con los checkboxes
-        needs.append(request.POST['need1'])
+        needs.append("sueño")
     if 'need2' in request.POST:  # OJO con los checkboxes
-        needs.append(request.POST['need2'])
+        needs.append("hambre")
     if 'need3' in request.POST:  # OJO con los checkboxes
-        needs.append(request.POST['need3'])
+        needs.append("tristeza")
 
     nota = request.POST['nota']
 
